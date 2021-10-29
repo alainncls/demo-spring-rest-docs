@@ -1,0 +1,64 @@
+= Demo Spring REST Docs - API documentation
+:toc:
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toclevels: 4
+:sectlinks:
+
+This page aims to describe all endpoints exposed by the "Demo Spring REST Docs" service.
+
+== Companies API
+
+=== Get all companies
+
+.Request
+include::{snippets}/getALlCompanies/http-request.adoc[]
+
+.Response
+[%collapsible]
+====
+include::{snippets}/getALlCompanies/http-response.adoc[]
+====
+
+.Response fields
+include::{snippets}/getALlCompanies/response-fields.adoc[]
+
+=== Get one company
+
+.Request
+include::{snippets}/getCompany/http-request.adoc[]
+
+.Path parameters
+include::{snippets}/getCompany/path-parameters.adoc[]
+
+.Response
+include::{snippets}/getCompany/http-response.adoc[]
+
+.Response fields
+include::{snippets}/getCompany/response-fields.adoc[]
+
+.Response if the company was not found
+include::{snippets}/getCompanyNotFound/http-response.adoc[]
+
+=== Create a company
+
+.Request
+include::{snippets}/createCompany/http-request.adoc[]
+
+.Request fields
+include::{snippets}/createCompany/request-fields.adoc[]
+
+.Response
+include::{snippets}/createCompany/http-response.adoc[]
+
+=== Delete a company
+
+.Request
+include::{snippets}/deleteCompany/http-request.adoc[]
+
+.Path parameters
+include::{snippets}/deleteCompany/path-parameters.adoc[]
+
+.Response
+include::{snippets}/deleteCompany/http-response.adoc[]

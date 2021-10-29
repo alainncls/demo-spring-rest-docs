@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo-spring-rest-docs
+
+server:
+  error:
+    include-message: always

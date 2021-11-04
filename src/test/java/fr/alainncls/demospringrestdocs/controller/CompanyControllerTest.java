@@ -62,30 +62,33 @@ class CompanyControllerTest {
                                 fieldWithPath("[].creationDate").description("The company creation date"))));
     }
 
+    // tag::test[]
     @Test
     void getCompany() throws Exception {
         final String ID = "ID_1";
 
         when(companyService.getCompany(ID)).thenReturn(company1);
 
-        this.mockMvc.perform(RestDocumentationRequestBuilders.get("/companies/{id}", ID))
-                .andExpect(handler().handlerType(CompanyController.class))
+        this.mockMvc.perform(RestDocumentationRequestBuilders.get("/companies/{id}", ID)) // <1>
+                .andExpect(handler().handlerType(CompanyController.class)) // <2>
                 .andExpect(handler().methodName("getCompany"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(company1)))
-                .andDo(document(
+                .andDo(document( // <3>
                         "getCompany",
                         ControllerTestUtils.preprocessRequest(),
                         ControllerTestUtils.preprocessResponse(),
-                        pathParameters(parameterWithName("id").description("The requested company id")),
-                        responseFields(
+                        pathParameters(parameterWithName("id").description("The requested company id")), // <4>
+                        responseFields( // <5>
                                 fieldWithPath("id").description("The company unique ID"),
                                 fieldWithPath("name").description("The company name"),
                                 fieldWithPath("location").description("The company location"),
                                 fieldWithPath("creationDate").description("The company creation date"))));
     }
+    // end::test[]
 
+    // tag::testko[]
     @Test
     void getCompanyNotFound() throws Exception {
         final String ID = "ID_3";
@@ -98,10 +101,11 @@ class CompanyControllerTest {
                 .andDo(print())
                 .andExpect(status().isNotFound())
                 .andDo(document(
-                        "getCompanyNotFound",
+                        "getCompanyNotFound", // <1>
                         ControllerTestUtils.preprocessRequest(),
                         ControllerTestUtils.preprocessResponse()));
     }
+    // end::testko[]
 
     @Test
     void createCompany() throws Exception {

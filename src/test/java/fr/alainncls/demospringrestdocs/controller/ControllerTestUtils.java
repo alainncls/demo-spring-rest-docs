@@ -7,6 +7,7 @@ import org.springframework.restdocs.operation.preprocess.Preprocessors;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.removeHeaders;
 
+// tag::utils[]
 public class ControllerTestUtils {
 
     static OperationRequestPreprocessor preprocessRequest() {
@@ -18,3 +19,4 @@ public class ControllerTestUtils {
     }
 
 }
+// end::utils[]

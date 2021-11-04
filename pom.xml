@@ -44,13 +44,16 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- tag::dependency[] -->
         <dependency>
             <groupId>org.springframework.restdocs</groupId>
             <artifactId>spring-restdocs-mockmvc</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- end::dependency[] -->
     </dependencies>
 
+    <!-- tag::build[] -->
     <build>
         <plugins>
             <plugin>
@@ -87,7 +90,9 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <!-- end::build[] -->
 
+            <!-- tag::expose[] -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <executions>
@@ -108,6 +113,9 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- end::expose[] -->
+            <!-- tag::build[] -->
         </plugins>
     </build>
+    <!-- end::build[] -->
 </project>

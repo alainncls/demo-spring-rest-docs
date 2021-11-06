@@ -13,16 +13,16 @@ This page aims to describe all endpoints exposed by the "Demo Spring REST Docs" 
 === Get all companies
 
 .Request
-include::{snippets}/getALlCompanies/http-request.adoc[]
+include::{snippets}/getAllCompanies/http-request.adoc[]
 
 .Response
 [%collapsible]
 ====
-include::{snippets}/getALlCompanies/http-response.adoc[]
+include::{snippets}/getAllCompanies/http-response.adoc[]
 ====
 
 .Response fields
-include::{snippets}/getALlCompanies/response-fields.adoc[]
+include::{snippets}/getAllCompanies/response-fields.adoc[]
 
 === Get one company
 

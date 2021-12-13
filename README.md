@@ -33,4 +33,4 @@ The HTML documentation will be generated in `target/generated-docs` and the snip
 This project serves as a demonstration in 2 blog posts (in French):
 
 1. [Spring REST Docs presentation](https://alainnicolas.fr/blog/make-documentation-great-again-part-2/)
-2. Going further with Spring REST Docs (_coming soon_)
+2. [Going further with Spring REST Docs](https://alainnicolas.fr/blog/make-documentation-great-again-bonus/)

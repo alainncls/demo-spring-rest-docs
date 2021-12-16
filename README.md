@@ -2,6 +2,10 @@
 
 This project is a simple demonstration of how to use Spring REST Docs.
 
+[![Build](https://github.com/alainncls/demo-spring-rest-docs/actions/workflows/pipeline.yml/badge.svg)](https://github.com/alainncls/demo-spring-rest-docs/actions/workflows/pipeline.yml)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=alainncls_demo-spring-rest-docs&metric=coverage)](https://sonarcloud.io/summary/new_code?id=alainncls_demo-spring-rest-docs)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=alainncls_demo-spring-rest-docs&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=alainncls_demo-spring-rest-docs)
+
 ## Launch
 
 1. Clone this repository

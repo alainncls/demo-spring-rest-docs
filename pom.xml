@@ -18,7 +18,7 @@
     <properties>
         <java.version>11</java.version>
         <spring-rest-docs.version>2.0.5.RELEASE</spring-rest-docs.version>
-        <log4j2.version>2.15.0</log4j2.version>
+        <log4j2.version>2.16.0</log4j2.version>
     </properties>
 
     <dependencies>
